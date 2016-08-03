@@ -1,0 +1,18 @@
+{
+  "cid" : "discord_channel_id_for_sniping",
+  "lid" : "discord_channel_ig_for_logging",
+  "token": "bot_token",
+
+  "addresses":[
+    "London",
+    "Paris",
+    "Texas",
+    "New York"
+  ],
+  "bounds":[
+    [ 22.179639,113.823194,22.561978,114.412522 ],
+    [ 37.685671,-122.839237,38.073721,-121.523624 ],
+    [ 49.578913,2.811516,52.503081,8.211296 ]
+  ],
+  "pokemons": "1-9,33,58,133-149"
+}
