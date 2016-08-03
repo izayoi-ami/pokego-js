@@ -79,6 +79,7 @@ bot.on "message", (msg)->
         add p ID[,ID,...]      : add pokemon ID
         set p NUM              : set NUM region parallel search
         hello a                : return Hello World (For Testing only)
+        restart
   """
   match = msg.content.match(regex)
   reply = (msg) -> bot.sendMessage lid, msg
@@ -118,6 +119,8 @@ bot.on "message", (msg)->
       updated=true
       if match[2]=="p"
         global.parallel=parseInt(match[4])
+    when "restart"
+      process.exit()
   if updated
     jsonfile.writeFile(config_file, global, spaces: 4)
     reply "Updated."
