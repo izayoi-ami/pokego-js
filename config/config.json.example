@@ -2,6 +2,7 @@
   "cid" : "discord_channel_id_for_sniping",
   "lid" : "discord_channel_ig_for_logging",
   "token": "bot_token",
+  "parallel": "3",
 
   "addresses":[
     "London",
