@@ -21,7 +21,6 @@ global.addresses = config.addresses
 global.pokemons = new MultiRange(config.pokemons.ranges)
 global.cnt = 0
 global.parallel = parseInt(config.parallel)
-global.params = ("bounds":b for b in config.bounds).concat ("address":a for a in config.addresses)
 start="==================START======================\n"
 end  ="==================END========================\n"
 
@@ -30,6 +29,7 @@ work = () ->
   body = []
   res = []
   err = []
+  global.params = ("bounds":b for b in config.bounds).concat ("address":a for a in config.addresses)
   p = global.params.length
   n = global.cnt
   k = global.parallel
